@@ -154,6 +154,14 @@ button#senha:hover {
 }
 
 
+div#cadastro{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+
 
 
 
