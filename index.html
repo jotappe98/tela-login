@@ -3,44 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+
+
     <title>Login</title>
 </head>
 <body>
     <main>
         <section id="login">
+
             <div id="formulario">
-
                 <h1>Login</h1>
-                <p>Seja muito bem-vindo(a)! Faça seu login ou cadastre-se caso ainda não tenha uma conta.</p>
-                
+
+                <p>
+                    Seja muito bem-vindo(a)! Faça seu login ou cadastre-se caso ainda não tenha uma conta.
+                </p>
+
                 <form action="" method="post">
-                    <div class="campos">
-                        <i class="material-icons">person</i>
-                        <label for="iemail"></label>
-                        <input type="email" id="iemail" name="email" placeholder="seu e-mail" class="entradas">
-                    </div>
 
                     <div class="campos">
-                        <i class="material-icons">lock</i>
-                        <label for="isenha"></label>
-                        <input type="password" id="isenha" name="senha" placeholder="sua senha" class="entradas">
+                        <i class="material-icons" aria-hidden="true">person</i>
+                        <label for="iemail" class="sr-only">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="iemail" 
+                            name="email" 
+                            placeholder="seu e-mail" 
+                            class="entradas"
+                            required
+                        >
                     </div>
 
-                    <div >
-                        <button id="botao">Entrar</button>
-
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">lock</i>
+                        <label for="isenha" class="sr-only">Senha</label>
+                        <input 
+                            type="password" 
+                            id="isenha" 
+                            name="senha" 
+                            placeholder="sua senha" 
+                            class="entradas"
+                            required
+                        >
                     </div>
 
+                    <div id="centro">
+                        <button id="botao" type="submit">
+                            Entrar
+                        </button>
+                    </div>
+
+                    <div>
+                        <button id="senha" type="button">
+                            <i class="material-icons" aria-hidden="true">email</i>
+                            Esqueci minha senha
+                        </button>
+                    </div>
 
                 </form>
-
             </div>
 
-            <div id="imagem">
-            
-            </div>
+            <div id="imagem" aria-hidden="true"></div>
+
         </section>
     </main>
 </body>
