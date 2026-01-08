@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+
+    section#cadastro-section {
+        width: 94vw;
+        max-width: none;
+        padding: 10px 0;
+    }
+
+    div#formulario h1 {
+        font-size: 1.4rem;
+    }
+
+    div.campos {
+        height: 44px; 
+    }
+
+    input.entradas {
+        font-size: 1rem;
+    }
+
+    ul#lista {
+        font-size: 0.75rem;
+    }
+
+    button#botao {
+        height: 44px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+html, body {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #486F8A, #89AEC1, #A7C4D6);
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section#cadastro-section {
+    width: 90vw;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+}
+
+div#formulario h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+div.campos {
+    background-color: #486F8A;
+    border: 2px solid #486F8A;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 24px);
+    height: 40px;
+    margin: 0 auto 6px;
+    border-radius: 8px;
+    padding-left: 8px;
+}
+
+div.campos i {
+    color: #fff;
+    font-size: 22px;
+}
+
+input.entradas {
+    width: 100%;
+    height: 90%;
+    margin-left: 8px;
+    padding-left: 6px;
+    font-size: 1rem;
+    background-color: #A7C4D6;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+input.entradas:focus {
+    background-color: #ffffff;
+}
+
+input.entradas::placeholder {
+    color: #486F8A;
+}
+
+
+ul#lista {
+    width: calc(100% - 24px);
+    margin: 6px auto 10px;
+    padding-left: 20px;
+    font-size: 0.8rem;
+    color: black ;
+}
+
+
+div#centro {
+    display: flex;
+    justify-content: center;
+}
+
+button#botao {
+    width: calc(100% - 24px);
+    height: 40px;
+    margin: 6px auto;
+    background-color: #486F8A;
+    border: 2px solid #486F8A;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+button#botao:hover {
+    background-color: #A7C4D6;
+    color: #486F8A;
+}

@@ -3,14 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="stylesheet" href="estilos/cadastromobile.css">
     <title>Faça seu cadastro</title>
 </head>
 <body>
     <main>
-        <section>
-            <form action="">
-                
-            </form>
+        <section id="cadastro-section">
+            <div id="formulario">
+                <h1>Crie uma conta</h1>
+
+                <form action="" method="post">
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">email</i>
+                        <label for="iemail" class="sr-only">E-mail</label>
+                        <input type="email" id="iemail" name="email"
+                            placeholder="seu e-mail" class="entradas" required>
+                    </div>
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">lock</i>
+                        <label for="isenha" class="sr-only">Senha</label>
+                        <input type="password" id="isenha" name="senha"
+                            placeholder="sua senha" class="entradas" required>
+                    </div>
+
+                    
+                    <ul id="lista">
+                        <li>Mínimo de 8 caracteres</li>
+                        <li>Ao menos 1 número</li>
+                        <li>1 caractere especial (@, #, $…)</li>
+                        <li>Letras maiúsculas e minúsculas</li>
+                    </ul>
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">lock</i>
+                        <label for="iconfsenha" class="sr-only">Confirme sua senha</label>
+                        <input type="password" id="iconfsenha" name="confsenha"
+                            placeholder="confirme sua senha" class="entradas" required>
+                    </div>
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">badge</i>
+                        <label for="icpf" class="sr-only">CPF</label>
+                        <input type="text" id="icpf" name="cpf"
+                            placeholder="000.000.000-00" class="entradas"
+                            maxlength="14" required>
+                    </div>
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">person</i>
+                        <label for="iname" class="sr-only">Nome completo</label>
+                        <input type="text" id="iname" name="nome"
+                            placeholder="nome completo" class="entradas" required>
+                    </div>
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">calendar_today</i>
+                        <label for="inascimento" class="sr-only">Data de nascimento</label>
+                        <input type="date" id="inascimento" name="nascimento"
+                            class="entradas" required>
+                    </div>
+
+                    <div class="campos">
+                        <i class="material-icons" aria-hidden="true">phone</i>
+                        <label for="itel" class="sr-only">Celular</label>
+                        <input type="tel" id="itel" name="telefone"
+                            placeholder="(xx) 00000-0000" class="entradas" required>
+                    </div>
+
+                    <div id="centro">
+                        <button id="botao" type="submit">Cadastrar</button>
+                    </div>
+
+                </form>
+            </div>
         </section>
     </main>
 </body>
